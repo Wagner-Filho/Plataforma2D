@@ -938,7 +938,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!212 &1866718747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1016,17 +1016,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1866718744}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20308cfe50a5ccb4481cc205d553cdc1, type: 3}
+  m_Script: {fileID: 11500000, guid: c979ee2a6a74a494688f3e5f6d0312f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
-  _rb: {fileID: 1866718746}
+  _speed: 100
+  _jumpF: 20
   _moveX: 0
-  _moveY: 0
-  _jumpF: 35
-  _checkGround: 1
-  isFacingRight: 0
+  _checkGround: 0
   _checkIniciar: 1
+  isFacingRight: 0
+  _rb: {fileID: 1866718746}
+  _inputValue: {x: 0, y: 0}
 --- !u!1 &1956789205
 GameObject:
   m_ObjectHideFlags: 0

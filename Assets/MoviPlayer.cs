@@ -79,7 +79,7 @@ public class MoviPlayer : MonoBehaviour
     {
         _moveX = UnityEngine.Input.GetAxisRaw("Horizontal");
 
-        _moveY = UnityEngine.Input.GetAxisRaw("Vertical");
+        //_moveY = UnityEngine.Input.GetAxisRaw("Vertical");
     }
     void Jump()
     {
