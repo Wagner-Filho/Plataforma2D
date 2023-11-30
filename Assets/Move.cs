@@ -23,10 +23,9 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_checkIniciar == true)
-        {
-            Walk();
-        }
+
+        Walk();
+
         if (UnityEngine.Input.GetKeyDown(KeyCode.Space) && _checkGround == true)
         {
             Jump();
@@ -68,12 +67,12 @@ public class Move : MonoBehaviour
     }
     void Walk()
     {
+        Control();
         _rb.velocity = new Vector2(_moveX * _speed, _rb.velocity.y);
     }
     void Control()
     {
-        _inputValue.x = Input.GetAxisRaw("Horizontal") * _speed;
-        _inputValue.y = _rb.velocity.y;
+        _moveX = Input.GetAxisRaw("Horizontal");
     }
     void Jump()
     {

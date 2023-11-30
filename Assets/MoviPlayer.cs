@@ -6,7 +6,6 @@ using UnityEngine;
 public class MoviPlayer : MonoBehaviour
 {
     [SerializeField] float _speed;
-    [SerializeField] Rigidbody2D _rb;
     [SerializeField] float _moveX;
     [SerializeField] float _moveY;
     [SerializeField] float _jumpF;
@@ -14,6 +13,8 @@ public class MoviPlayer : MonoBehaviour
     [SerializeField] bool _checkGround;
     [SerializeField] bool isFacingRight;
     [SerializeField] bool _checkIniciar;
+
+    [SerializeField] Rigidbody2D _rb;
 
     // Start is called before the first frame update
     void Start()
